@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name BeeHiveLegacy)(type Legacy)(uri ${KIPRJMOD}/modules/BeeHiveLegacy.pretty)(options "")(descr "")(disabled))
+  (lib (name BeeHive)(type KiCad)(uri ${KIPRJMOD}/modules/BeeHive.pretty)(options "")(descr "")(disabled))
+  (lib (name SMBeeHive)(type KiCad)(uri ${KIPRJMOD}/modules/SMBeeHive.pretty)(options "")(descr ""))
+)

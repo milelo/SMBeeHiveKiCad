@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name BeeSymbols)(type Legacy)(uri /Users/Mike/Documents/BeeBadge/KiCad/HiveDock/HiveDock/BeeSymbols.lib)(options "")(descr ""))
+  (lib (name BeeHive)(type Legacy)(uri /Users/Mike/Documents/BeeBadge/KiCad/HiveDock/HiveDock/BeeHive.lib)(options "")(descr ""))
+  (lib (name 1825910-6)(type Legacy)(uri /Users/Mike/Documents/BeeBadge/KiCad/HiveDock/HiveDock/library/1825910-6.lib)(options "")(descr ""))
+  (lib (name SMBeeHive-rescue)(type Legacy)(uri ${KIPRJMOD}/SMBeeHive-rescue.lib)(options "")(descr ""))
+)
