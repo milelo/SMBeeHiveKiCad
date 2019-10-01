@@ -1,0 +1,323 @@
+EESchema Schematic File Version 4
+LIBS:SMBeeHive-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "BeeHive Programmer"
+Date ""
+Rev "0.1"
+Comp "Mike Longworth"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x01_Male J1-5
+U 1 1 5BC70249
+P 7000 4400
+F 0 "J1-5" H 6972 4330 50  0000 R CNN
+F 1 "GND" H 6972 4421 50  0000 R CNN
+F 2 "SMBeeHive:Pin-0906-1-15-20-7X-14-11-0" H 7000 4400 50  0001 C CNN
+F 3 "~" H 7000 4400 50  0001 C CNN
+	1    7000 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1-4
+U 1 1 5BC70286
+P 7000 4200
+F 0 "J1-4" H 6972 4130 50  0000 R CNN
+F 1 "DAT" H 6972 4221 50  0000 R CNN
+F 2 "SMBeeHive:Pin-0906-1-15-20-7X-14-11-0" H 7000 4200 50  0001 C CNN
+F 3 "~" H 7000 4200 50  0001 C CNN
+	1    7000 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1-3
+U 1 1 5BC702C6
+P 7000 4000
+F 0 "J1-3" H 6972 3930 50  0000 R CNN
+F 1 "CLK" H 6972 4021 50  0000 R CNN
+F 2 "SMBeeHive:Pin-0906-1-15-20-7X-14-11-0" H 7000 4000 50  0001 C CNN
+F 3 "~" H 7000 4000 50  0001 C CNN
+	1    7000 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1-1
+U 1 1 5BC7039B
+P 7000 3600
+F 0 "J1-1" H 6972 3530 50  0000 R CNN
+F 1 "PRG" H 6972 3621 50  0000 R CNN
+F 2 "SMBeeHive:Pin-0906-1-15-20-7X-14-11-0" H 7000 3600 50  0001 C CNN
+F 3 "~" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5BC70E8A
+P 7200 2650
+F 0 "J3" V 7260 2790 50  0000 L CNN
+F 1 "S10V2F12" V 7150 2400 50  0000 L CNN
+F 2 "SMBeeHive:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 2650 50  0001 C CNN
+F 3 "~" H 7200 2650 50  0001 C CNN
+	1    7200 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BC863EB
+P 5000 4200
+F 0 "R1" H 4930 4154 50  0000 R CNN
+F 1 "220R" H 4930 4245 50  0000 R CNN
+F 2 "SMBeeHive:R_0805_HandSoldering" V 4930 4200 50  0001 C CNN
+F 3 "~" H 5000 4200 50  0001 C CNN
+	1    5000 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SMBeeHive-rescue:1825910-6-1825910-6 SW1
+U 1 1 5BC871D0
+P 5950 3200
+F 0 "SW1" H 5950 3565 50  0000 C CNN
+F 1 "toggle-sleep" H 5950 3474 50  0000 C CNN
+F 2 "SMBeeHive:SW_1825910-6" H 5950 3200 50  0001 L BNN
+F 3 "FSM4JH=6MM TACT SWITCH, HIGH TEMP" H 5950 3200 50  0001 L BNN
+F 4 "1825910-6" H 5950 3200 50  0001 L BNN "Field4"
+F 5 "50 mA" H 5950 3200 50  0001 L BNN "Field5"
+F 6 "1825910-6" H 5950 3200 50  0001 L BNN "Field6"
+F 7 "None" H 5950 3200 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 5950 3200 50  0001 L BNN "Field8"
+F 9 "None" H 5950 3200 50  0001 L BNN "Field9"
+F 10 "Compliant" H 5950 3200 50  0001 L BNN "Field10"
+F 11 "Single Pole - Single Throw" H 5950 3200 50  0001 L BNN "Field11"
+F 12 "TE Connectivity" H 5950 3200 50  0001 L BNN "Field12"
+F 13 "http://www.te.com/usa-en/product-1825910-6.html" H 5950 3200 50  0001 L BNN "Field13"
+	1    5950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BC873B8
+P 6600 2950
+F 0 "R2" H 6530 2904 50  0000 R CNN
+F 1 "1K" H 6530 2995 50  0000 R CNN
+F 2 "SMBeeHive:R_0805_HandSoldering" V 6530 2950 50  0001 C CNN
+F 3 "~" H 6600 2950 50  0001 C CNN
+	1    6600 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 4400 5350 3200
+Wire Wire Line
+	5350 2650 7000 2650
+Wire Wire Line
+	6350 3300 6400 3300
+Wire Wire Line
+	6400 3100 6350 3100
+Wire Wire Line
+	6600 3450 6600 3600
+Wire Wire Line
+	6600 3600 6800 3600
+Wire Wire Line
+	7000 2750 6600 2750
+Wire Wire Line
+	6600 2800 6600 2750
+Wire Wire Line
+	5550 3100 5500 3100
+Wire Wire Line
+	5500 3100 5500 3200
+Wire Wire Line
+	5500 3300 5550 3300
+Wire Wire Line
+	5500 3200 5350 3200
+Connection ~ 5500 3200
+Wire Wire Line
+	5500 3200 5500 3300
+Connection ~ 5350 3200
+Wire Wire Line
+	5350 3200 5350 2650
+Wire Wire Line
+	5000 4600 6800 4600
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5BC710B6
+P 4250 4200
+F 0 "J2" H 4300 4617 50  0000 C CNN
+F 1 "USBASP" H 4300 4526 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 4250 4200 100 0001 C CNN
+F 3 "~" H 4250 4200 50  0001 C CNN
+	1    4250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4300 4600 4300
+Wire Wire Line
+	4600 4300 4600 4400
+Wire Wire Line
+	4550 4400 4600 4400
+Connection ~ 4600 4400
+Wire Wire Line
+	6150 4000 6150 3550
+Wire Wire Line
+	6150 3550 3600 3550
+Wire Wire Line
+	3600 3550 3600 4300
+Wire Wire Line
+	5800 3700 5800 4200
+Wire Wire Line
+	5800 4200 6800 4200
+Wire Wire Line
+	6150 4000 6800 4000
+Wire Wire Line
+	5000 4350 5000 4600
+Wire Wire Line
+	5000 4050 5000 4000
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5BCA81CA
+P 4400 3000
+F 0 "JP1" H 4400 3146 50  0000 C CNN
+F 1 "PRGM Source" H 4400 3237 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4400 3000 50  0001 C CNN
+F 3 "~" H 4400 3000 50  0001 C CNN
+	1    4400 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 4200 3500 4200
+Wire Wire Line
+	3500 3000 4150 3000
+Wire Wire Line
+	4650 3000 5000 3000
+Wire Wire Line
+	5000 3000 5000 4000
+Connection ~ 5000 4000
+Wire Wire Line
+	3700 4400 3700 4000
+Wire Wire Line
+	3700 4000 4050 4000
+Wire Wire Line
+	3700 4000 3700 3700
+Wire Wire Line
+	3700 3700 5800 3700
+Connection ~ 3700 4000
+Wire Wire Line
+	4550 4200 4600 4200
+Wire Wire Line
+	4600 4200 4600 4300
+Connection ~ 4600 4300
+Wire Wire Line
+	4550 4100 4600 4100
+Wire Wire Line
+	4600 4100 4600 4200
+Connection ~ 4600 4200
+NoConn ~ 4050 4100
+$Comp
+L Diode:BAT43 D1
+U 1 1 5BC86FFB
+P 6600 3300
+F 0 "D1" V 6646 3221 50  0000 R CNN
+F 1 "STPS0520Z" V 6555 3221 50  0000 R CNN
+F 2 "SMBeeHive:D_SOD-123" H 6600 3125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 6600 3300 50  0001 C CNN
+	1    6600 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 3100 6400 3300
+Wire Wire Line
+	6600 3100 6600 3150
+Wire Wire Line
+	6600 3600 6400 3600
+Wire Wire Line
+	6400 3600 6400 3300
+Connection ~ 6600 3600
+Connection ~ 6400 3300
+Wire Wire Line
+	4400 2550 7000 2550
+Wire Wire Line
+	3700 4400 4050 4400
+Wire Wire Line
+	3600 4300 4050 4300
+Wire Wire Line
+	3500 3000 3500 4200
+Text Label 6650 4200 0    50   ~ 0
+DAT
+Text Label 6650 4000 0    50   ~ 0
+CLK
+Text Label 6650 3600 0    50   ~ 0
+PRG
+Text Label 4600 2550 0    50   ~ 0
+PRGM
+Text Label 6650 2750 0    50   ~ 0
++12V
+Text Label 3800 4400 0    50   ~ 0
+MISO
+Text Label 3800 4300 0    50   ~ 0
+SCK
+Text Label 3800 4200 0    50   ~ 0
+RST
+Text Label 3800 4000 0    50   ~ 0
+MOSI
+Wire Wire Line
+	4400 2550 4400 2900
+Text Label 6700 2650 0    50   ~ 0
+GND
+Text Label 6700 2550 0    50   ~ 0
+Vin
+NoConn ~ 6800 3800
+$Comp
+L Connector:Conn_01x01_Male J1-2
+U 1 1 5BC7034F
+P 7000 3800
+F 0 "J1-2" H 6972 3730 50  0000 R CNN
+F 1 "NC" H 6972 3821 50  0000 R CNN
+F 2 "SMBeeHive:Pin-0906-1-15-20-7X-14-11-0" H 7000 3800 50  0001 C CNN
+F 3 "~" H 7000 3800 50  0001 C CNN
+	1    7000 3800
+	-1   0    0    1   
+$EndComp
+NoConn ~ 6550 2450
+Wire Wire Line
+	7000 2450 6550 2450
+Text Label 6700 2450 0    50   ~ 0
+^SHDN
+Wire Wire Line
+	4550 4000 5000 4000
+Wire Wire Line
+	4600 4400 5350 4400
+Text Label 4700 4000 0    50   ~ 0
+5V
+Text Label 4700 4400 0    50   ~ 0
+GND
+Text Label 6650 4600 0    50   ~ 0
+PWR
+$Comp
+L Connector:Conn_01x01_Male J1-6
+U 1 1 5BC700AF
+P 7000 4600
+F 0 "J1-6" H 6972 4530 50  0000 R CNN
+F 1 "PWR" H 6972 4621 50  0000 R CNN
+F 2 "SMBeeHive:Pin-0906-1-15-20-7X-14-11-0" H 7000 4600 50  0001 C CNN
+F 3 "~" H 7000 4600 50  0001 C CNN
+	1    7000 4600
+	-1   0    0    1   
+$EndComp
+Text Label 6650 4400 0    50   ~ 0
+GND
+Wire Wire Line
+	6800 4400 5350 4400
+Connection ~ 5350 4400
+Wire Wire Line
+	4150 3000 4150 2900
+Wire Wire Line
+	4150 2900 4400 2900
+Connection ~ 4150 3000
+Connection ~ 4400 2900
+$EndSCHEMATC
